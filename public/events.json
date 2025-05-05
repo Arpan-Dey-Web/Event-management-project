@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "name": "Tech Innovators Conference",
+        "thumbnail": "https://i.ibb.co.com/hR7MGwwB/pexels-asadphoto-169198.jpg",
+        "category": "Technology",
+        "date": "2025-06-10",
+        "location": "Convention Center, San Francisco, CA",
+        "entry_fee": 99.99,
+        "description": "A gathering of the brightest minds in technology, featuring keynote speeches, startup showcases, and hands-on workshops."
+    },
+
+   
+    {
+        "id": 2,
+        "name": "Midnight Music Fest",
+        "thumbnail": "https://i.ibb.co.com/39ZsS9Y1/pexels-wendywei-1190295.jpg",
+        "category": "Music",
+        "date": "2025-07-22",
+        "location": "Central Park, New York City, NY",
+        "entry_fee": 45.00,
+        "description": "An electrifying night of live performances from international and local artists under the stars."
+    },
+    {
+        "id": 3,
+        "name": "EcoLiving Expo",
+        "thumbnail": "https://i.ibb.co.com/0yxspJDq/pexels-wendywei-1537636.jpg",
+        "category": "Environment",
+        "date": "2025-08-15",
+        "location": "Green Hall, Austin, TX",
+        "entry_fee": 25.00,
+        "description": "Explore sustainable living solutions, from green products to clean energy tech, at this eco-conscious exhibition."
+    },
+    {
+        "id": 4,
+        "name": "Culinary Carnival",
+        "thumbnail": "https://i.ibb.co.com/Zz61Fn69/pexels-edotommo99-2034851.jpg",
+        "category": "Food",
+        "date": "2025-09-05",
+        "location": "Harborfront, Seattle, WA",
+        "entry_fee": 30.00,
+        "description": "A flavor-packed day of gourmet food trucks, live cooking shows, and delicious tastings from around the world."
+    },
+    {
+        "id": 5,
+        "name": "Startup Pitch Battle",
+        "thumbnail": "https://i.ibb.co.com/sJm7jG8L/pexels-vidalbalielojrfotografia-2337816.jpg",
+        "category": "Business",
+        "date": "2025-06-30",
+        "location": "Tech Tower, Boston, MA",
+        "entry_fee": 15.00,
+        "description": "Early-stage startups pitch their big ideas to top investors, with networking opportunities and feedback sessions."
+    },
+    {
+        "id": 6,
+        "name": "Digital Art Fusion",
+        "thumbnail": "https://i.ibb.co.com/5gXdw3CS/pexels-hygor-sakai-1214427-2311713.jpg",
+        "category": "Art",
+        "date": "2025-10-12",
+        "location": "ArtSpace Gallery, Los Angeles, CA",
+        "entry_fee": 20.00,
+        "description": "A celebration of digital creativity, blending traditional artistry with virtual reality and AI-powered exhibits."
+    },
+    {
+        "id": 7,
+        "name": "Health & Wellness Retreat",
+        "thumbnail": "https://i.ibb.co.com/mF8D6cwW/pexels-pixabay-159775.jpg",
+        "category": "Health",
+        "date": "2025-11-01",
+        "location": "Tranquil Grove, Sedona, AZ",
+        "entry_fee": 150.00,
+        "description": "A rejuvenating weekend of yoga, meditation, wellness workshops, and holistic healing experiences."
+    },
+    {
+        "id": 8,
+        "name": "Global Film Showcase",
+        "thumbnail": "https://i.ibb.co.com/ymWYxMCf/pexels-bertellifotografia-3321789.jpg",
+        "category": "Entertainment",
+        "date": "2025-12-03",
+        "location": "Silver Screen Theater, Chicago, IL",
+        "entry_fee": 40.00,
+        "description": "Screenings of indie films and documentaries from around the globe, with Q&A sessions and director meetups."
+    },
+    {
+        "id": 9,
+        "name": "Fashion Forward Runway",
+        "thumbnail": "https://i.ibb.co.com/g5dbfsy/pexels-zhuhehuai-716281.jpg",
+        "category": "Fashion",
+        "date": "2025-09-21",
+        "location": "The Style Loft, Miami, FL",
+        "entry_fee": 60.00,
+        "description": "A dazzling display of emerging designers and high couture on the runway, complete with a style market."
+    },
+    {
+        "id": 10,
+        "name": "Literature Live!",
+        "thumbnail": "https://i.ibb.co.com/204RTQ7m/pexels-joshsorenson-154147.jpg",
+        "category": "Literature",
+        "date": "2025-10-18",
+        "location": "City Library Auditorium, Portland, OR",
+        "entry_fee": 10.00,
+        "description": "Author talks, poetry slams, book signings, and workshops for readers and writers alike."
+    },
+    {
+        "id": 11,
+        "name": "World Culture Fair",
+        "thumbnail": "https://i.ibb.co.com/4RbnPvt5/pexels-bertellifotografia-2608516.jpg",
+        "category": "Culture",
+        "date": "2025-11-15",
+        "location": "Global Grounds, Houston, TX",
+        "entry_fee": 20.00,
+        "description": "Experience the rich traditions of over 30 countries through dance, food, crafts, and storytelling."
+    },
+    {
+        "id": 12,
+        "name": "CodeSprint Hackathon",
+        "thumbnail": "https://i.ibb.co.com/pBv7cdNQ/pexels-melissa-220267-698907.jpg",
+        "category": "Programming",
+        "date": "2025-08-27",
+        "location": "Innovation Hub, Denver, CO",
+        "entry_fee": 0.00,
+        "description": "48 hours of coding, collaboration, and creativity where developers solve real-world challenges."
+    }
+]
