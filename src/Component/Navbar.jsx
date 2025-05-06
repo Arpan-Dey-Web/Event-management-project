@@ -8,16 +8,18 @@ const Navbar = () => {
       <li>
         <NavLink to={"/"}>Home</NavLink>
       </li>
+
       <li>
         <NavLink to={"/myprofile"}>My Profile</NavLink>
       </li>
-      <li>
-        <NavLink to={"/login"}>LogIn</NavLink>
-      </li>
     </>
   );
-  // const userInfo = use(AuthContext)
-  // console.log(userInfo);
+  const { user, signOutUser } = use(AuthContext);
+
+  // logout function
+  const handleLogOut = () => {
+    signOutUser();
+  };
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -46,8 +48,8 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <div className="flex">
-          {/* <img src="../assets/event-organizing-logo.pn" alt="" /> */}
+        <div className="flex gap-2 items-center">
+          <img className="w-8" src="/public/subscription_4172162.png" alt="" />
           <Link to={"/"} className="text-2xl font-bold">
             Eventure
           </Link>
@@ -56,8 +58,29 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
-        <Link className="btn bg-purple-200">Contact</Link>
+      <div className="navbar-end gap-4">
+        <div className="tooltip" data-tip={user ? user.displayName : ""}>
+          <div className="avatar">
+            <div className=" rounded-full w-10 ">
+              <img
+                className="w-6"
+                src={`${
+                  user
+                    ? user.photoURL
+                    : "https://cdn-icons-png.flaticon.com/128/16998/16998906.png"
+                }`}
+              />
+            </div>
+          </div>
+        </div>
+
+        {user ? (
+          <button onClick={handleLogOut} className="btn">
+            LogOut
+          </button>
+        ) : (
+          <NavLink to={"/login"}>LogIn</NavLink>
+        )}
       </div>
     </div>
   );

@@ -1,33 +1,59 @@
 import React, { use } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router";
+import { Link } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
-const Login = () => {
-  const { user, signInUser, handleloginWithGoogle } = use(AuthContext);
-  console.log(user);
-  const location = useLocation();
+import { useNavigate } from "react-router";
+const Register = () => {
   const navigate = useNavigate();
-  const handleSignInUser = (e) => {
+  const { createUser, updateUserProfile, setUser, handleloginWithGoogle } =
+    use(AuthContext);
+  const handleSignUp = (e) => {
     e.preventDefault();
+    const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    signInUser(email, password).then(() => {
-      navigate(`${location.state ? location.state : "/"}`);
+    const photo = e.target.PhotoURL.value;
+
+    //   create user
+    createUser(email, password).then((result) => {
+      const userData = result.user;
+      updateUserProfile({ displayName: name, photoURL: photo })
+        .then(() => {
+          setUser({ ...userData, displayName: name, photoURL: photo });
+
+          navigate("/");
+        })
+        .catch((error) => {
+          console.log(error);
+          setUser(userData);
+        });
     });
   };
 
-  const googleLogIn = () => {
-    handleloginWithGoogle();
 
-    // if (user !==null) navigate("/");
-  };
+  const googleLogIn = () => {
+    handleloginWithGoogle()
+  }
+  
+    
 
   return (
     <div>
-      <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl mt-10 mb-10 ">
-        <h1 className="text-2xl font-bold text-center">Login</h1>
-        <form onSubmit={handleSignInUser} className="space-y-6">
+      <div className="w-full mx-auto max-w-md mt-10 mb-10 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+        <h1 className="text-2xl font-bold text-center">Register Now</h1>
+        <form onSubmit={handleSignUp} className="space-y-6">
           <div className="space-y-1 text-sm">
+            <label htmlFor="username" className="block dark:text-gray-600">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+              required
+            />
             <label htmlFor="username" className="block dark:text-gray-600">
               Email
             </label>
@@ -37,6 +63,19 @@ const Login = () => {
               id="email"
               placeholder="Your Email"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+              required
+            />
+
+            <label htmlFor="username" className="block dark:text-gray-600">
+              PhotoURL
+            </label>
+            <input
+              type="text"
+              name="PhotoURL"
+              id="username"
+              placeholder="PhotoURL"
+              className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+              required
             />
           </div>
           <div className="space-y-1 text-sm">
@@ -45,10 +84,12 @@ const Login = () => {
             </label>
             <input
               type="text"
+              pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,}$"
               name="password"
               id="password"
-              placeholder="Your Password"
+              placeholder="Password"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+              required
             />
             <div className="flex justify-end text-xs dark:text-gray-600">
               <a rel="noopener noreferrer" href="#">
@@ -60,7 +101,7 @@ const Login = () => {
             type="submit"
             className="block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600"
           >
-            Log In
+            Register
           </button>
         </form>
         <div className="flex items-center pt-4 space-x-1">
@@ -86,14 +127,14 @@ const Login = () => {
           </button>
         </div>
         <p className="text-xs text-center sm:px-6 dark:text-gray-600">
-          Don't have an account?
-          <NavLink to={"/signup"} className="underline dark:text-gray-800">
-            Sign up
-          </NavLink>
+          Already have an account?
+          <Link to={"/login"} className="underline dark:text-gray-800">
+            Log In
+          </Link>
         </p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
