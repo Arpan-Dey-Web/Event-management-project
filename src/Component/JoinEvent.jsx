@@ -5,22 +5,22 @@ const JoinEvent = () => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
-        <div className="grid  grid-cols-2 gap-5 p-10 border-b-2 lg:border-b-0 lg:border-r-2">
+        <div className="grid  grid-cols-2 gap-5 p-10 border-b-2 border-b-white lg:border-b-0 lg:border-r-2">
           <div>
-            <button className="border rounded-full  p-8 ">
+            <button className="border hover:border-amber-50 hover:border-2 rounded-full  p-8 bg-[#3A324A] hover:bg-[#625170]">
               <img
-                className="w-20"
+                className="w-20 "
                 src="https://cdn-icons-png.flaticon.com/128/2377/2377415.png"
                 alt=""
               />
             </button>
 
             <div>
-              <h1 className="font-bold text-2xl pt-">Build Networking</h1>
+              <h1 className="font-bold text-2xl font pt-2">Build Networking</h1>
             </div>
           </div>
           <div>
-            <button className="border rounded-full  p-8 ">
+            <button className="border hover:border-amber-50 hover:border-2 rounded-full  p-8 bg-[#3A324A] hover:bg-[#625170]">
               <img
                 className="w-20"
                 src="https://cdn-icons-png.flaticon.com/128/864/864837.png"
@@ -29,24 +29,24 @@ const JoinEvent = () => {
             </button>
 
             <div>
-              <h1 className="font-bold text-2xl pt-">Lot’s Of Fun</h1>
+              <h1 className="font-bold text-2xl font pt-2">Lot’s Of Fun</h1>
             </div>
           </div>
           <div>
-            <button className="border rounded-full  p-8 ">
+            <button className="border hover:border-amber-50 hover:border-2 rounded-full  p-8 bg-[#3A324A] hover:bg-[#625170]">
               <img
                 className="w-20"
-                src="https://cdn-icons-png.flaticon.com/128/10306/10306694.png"
+                src="https://cdn-icons-png.flaticon.com/128/18853/18853372.png"
                 alt=""
               />
             </button>
 
             <div>
-              <h1 className="font-bold text-2xl pt-">Meet New People</h1>
+              <h1 className="font-bold text-2xl font pt-2">Meet New People</h1>
             </div>
           </div>
           <div>
-            <button className="border rounded-full  p-8 ">
+            <button className="border hover:border-amber-50 hover:border-2 rounded-full  p-8 bg-[#3A324A] hover:bg-[#625170]">
               <img
                 className="w-20"
                 src="https://cdn-icons-png.flaticon.com/128/2298/2298249.png"
@@ -55,16 +55,18 @@ const JoinEvent = () => {
             </button>
 
             <div>
-              <h1 className="font-bold text-2xl pt-">Experience Speakers</h1>
+              <h1 className="font-bold text-2xl font pt-2">
+                Experience Speakers
+              </h1>
             </div>
           </div>
         </div>
         {/* second setion */}
         <div className="p-10">
-          <h1 className="text-4xl font-bold text-center text-pink-400">
+          <h1 className="text-4xl font-bold text-center font heading-fonts">
             WHY YOU SHOULD JOIN THIS EVENT
           </h1>
-          <p className="mt-5">
+          <p className="mt-5 paragraph">
             Joining an event is more than just attending—it’s stepping into a
             world of new experiences, fresh connections, and boundless
             inspiration. Whether it’s a conference, workshop, art show, or
@@ -85,16 +87,16 @@ const JoinEvent = () => {
             of community, culture, and change. It’s your moment. Claim it.
             Celebrate it. Live it.
           </p>
-          <button className="btn btn-accent mt-5">Join Now</button>
+          <button className="btn main-btns mt-5 font">Join Now</button>
         </div>
       </div>
 
       <div className="my-10">
-        <h1 className="font-bold text-3xl text-center mb-10">
+        <h1 className="font-bold text-3xl text-center mb-10 font">
           Our Client Review
         </h1>
         <Marquee pauseOnHover={true}>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -128,7 +130,7 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -161,7 +163,7 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -195,7 +197,7 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -228,7 +230,7 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>

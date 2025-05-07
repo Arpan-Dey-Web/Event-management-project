@@ -13,10 +13,10 @@ const Home = () => {
       {/* all events */}
       <div className="py-10 ">
         <div className="text-center">
-          <h1 className="font-extrabold text-5xl heading-fonts text-blue-500">
+          <h1 className="font-extrabold text-5xl heading-fonts font">
             Explore The Upcoming Events
           </h1>
-          <p className="pt-5 font-medium text-2xl">
+          <p className="pt-5 font-medium text-2xl paragraph">
             Banners rise, crowds cheer, dreams ignite—moments bloom beneath the
             festive light.
           </p>

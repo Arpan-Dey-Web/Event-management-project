@@ -24,56 +24,77 @@ const EventDetails = () => {
   };
 
   return (
-    <div className="py-10">
+    <div className="py-10   ">
       <div className=" rounded-2xl  bg-base-300 ">
         <div className="text-center">
-          <img className="w-full object-cover" src={thumbnail} alt="" />
+          <img
+            className="w-full rounded-2xl object-cover "
+            src={thumbnail}
+            alt=""
+          />
         </div>
-        <div className="p-4">
-          <h1 className="text-4xl font-bold ">{name}</h1>
-          <p className="font-semibold text-lg">Date: {date}</p>
-          <p className="text-lg  text-blue-800">{location}</p>
-          <p className="text-lg font-bold">{category}</p>
-          <p className="font-medium">Entree Fee: {entry_fee} Doller</p>
-          <p className="text-emerald-500 font-medium ">{description}</p>
+        <div className="p-4 card-bg  rounded-2xl">
+          <h1 className="text-4xl font-bold font">{name}</h1>
+          <p className="font-semibold text-lg paragraph">Date: {date}</p>
+          <p className="text-lg  paragraph">{location}</p>
+          <p className="text-lg font-bold paragraph">{category}</p>
+          <p className="font-medium paragraph">
+            Entree Fee: {entry_fee} Doller
+          </p>
+          <p className="paragraph font-medium ">{description}</p>
           <div className="mt-5">
             <NavLink to={"/"}>
-              <button className="btn btn-primary">Back to Home Page</button>
+              <button className="btn main-btns">Back to Home Page</button>
             </NavLink>
           </div>
 
-          <div className="p-5 shadow-sm bg-white w-2xl flex flex-col justify-center items-center mt-10 rounded-2xl">
+          <div className="p-5 shadow-sm bg-[#2F2F3B]  flex flex-col max-w-3xl mx-auto justify-center items-center mt-10 rounded-2xl">
             <div>
-              <h1 className="font-extrabold text-4xl">Reserve Your Seat</h1>
+              <h1 className="font-extrabold mb-5 text-4xl font">
+                Reserve Your Seat
+              </h1>
             </div>
-            <form onSubmit={handleReserveSeat}>
-              <div className="flex items-center gap-1 mt-5">
-                <label htmlFor="url" className="block text-sm font-medium">
+            <form
+              onSubmit={handleReserveSeat}
+              className="bg-[#454154] p-6 rounded-xl  space-y-4 shadow-md"
+            >
+              <div className="flex flex-col">
+                <label
+                  htmlFor="name"
+                  className="text-[#CFCFCF] text-sm font-medium mb-1"
+                >
                   Name
                 </label>
                 <input
                   type="text"
                   name="name"
                   placeholder="Enter Your Name"
-                  className="input input-lg input-success"
+                  className="input input-lg bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0]"
                   required
                 />
               </div>
 
-              <div className="flex items-center gap-2 mt-2 ">
-                <label className="block text-sm font-medium">Email</label>
-
+              <div className="flex flex-col">
+                <label
+                  htmlFor="email"
+                  className="text-[#CFCFCF] text-sm font-medium mb-1"
+                >
+                  Email
+                </label>
                 <input
-                  className="input validator input-lg "
                   type="email"
                   name="email"
                   placeholder="Enter Your Email"
+                  className="input input-lg bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0]"
                   required
                 />
               </div>
 
-              <div className="flex justify-center items-center">
-                <button type="submit" className="btn-accent btn mt-4 ">
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="btn bg-[#3A324A] hover:bg-[#625170] text-white  transition-colors duration-200"
+                >
                   Reserve a Seat
                 </button>
               </div>

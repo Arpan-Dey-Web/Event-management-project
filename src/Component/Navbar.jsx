@@ -5,11 +5,14 @@ import { AuthContext } from "../Context/AuthContext";
 const Navbar = () => {
   const links = (
     <>
-      <li>
+      <li className=" font-medium text-lg">
         <NavLink to={"/"}>Home</NavLink>
       </li>
+      <li className=" font-medium text-lg">
+        <NavLink to={"/about"}>About</NavLink>
+      </li>
 
-      <li>
+      <li className=" font-medium text-lg">
         <NavLink to={"/myprofile"}>My Profile</NavLink>
       </li>
     </>
@@ -21,7 +24,7 @@ const Navbar = () => {
     signOutUser();
   };
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar shadow-sm  rounded-2xl font">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +58,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end gap-4">
@@ -75,17 +78,17 @@ const Navbar = () => {
         </div>
 
         {user ? (
-          <button onClick={handleLogOut} className="btn">
+          <button
+            onClick={handleLogOut}
+            className="btn main-btns outline-0 font"
+          >
             LogOut
           </button>
         ) : (
           <div>
-            <button className="btn mr-2.5">
+            <button className="btn mr-2.5 main-btns font outline-0">
               <NavLink to={"/login"}>LogIn</NavLink>
             </button>
-            {/* <button className="btn">
-              <NavLink to={"/signup"}>Register</NavLink>
-            </button> */}
           </div>
         )}
       </div>

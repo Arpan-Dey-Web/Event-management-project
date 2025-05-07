@@ -1,3 +1,27 @@
+Color Hex Code Where to Use
+🟦 Electric Blue #2979FF - Main buttons (Book Now, Register)
+
+- Links and hover effects
+- Header or navigation bar
+  🟠 Coral Orange #FF6B6B - Call-to-action highlights
+- Notification badges (e.g. “New”, “Hot”)
+- Icons or calendar dates
+  ⚫ Dark Charcoal #1E1E2F - Website background
+- Footer
+- Banner background
+  ⚪ Soft White #F5F5F5 - Main text and headings
+- Form labels
+- Button text
+  🟤 Slate Gray #2F2F3B - Card backgrounds (event cards, user profiles)
+- Sidebars
+- Popups or overlays
+  💚 Neon Green #39FF14 - Glow effects (hover or loading)
+- Status indicators (“Live”, “Upcoming”)
+- Small animations or highlight outlines
+  🟣 Violet Gradient (Optional) #7F00FF → #E100FF - Hero section background
+- Overlay gradients
+- Hover or transition effects
+
 Assignment Category: Assignment-09_category_Jasmine
 
 🚩🚩update: All the updates will be declared here.  
@@ -8,8 +32,7 @@ Event Explorer – A Local Event Discovery Platform
 Project Theme
 This project centers around creating a platform that enables users to discover, explore, and get details about upcoming local events such as conferences, workshops, sports events, art exhibitions, and more. Users can log in, browse events, view detailed info, and leave feedback or ratings for events they attend.
 
-<!--
- Ensure the Following things to get 100% mark
+Ensure the Following things to get 100% mark
 
 ✅GitHub Commits: Include at least 10 meaningful commits with descriptive messages.
 ✅Readme.md: Include a README file with the project name, purpose, live URL, key features, and any npm packages you have used.
@@ -19,7 +42,6 @@ This project centers around creating a platform that enables users to discover, 
 ✅Host your Application: You can host deployment systems like Netlify, surge, and Firebase. As you develop a single-page application
 ✅ensure that the page doesn't throw any error on reloading from any routes.
 ✅Add authorized domain to Firebase if you use Netlify / surge
- -->
 
 Main Requirements
 Layout Structure
@@ -40,9 +62,9 @@ JSON Data Generation
 
 Home
 
-✅The home page will have these sections — Slider, Upcoming Events, & 2 extra sections
-✅Slider: Add a slider (Daisy UI slider or Swiper slider) with a minimum of 3 slides.
-✅Upcoming Events Section: In the upcoming events section you need to create a JSON minimum of 6 data. You need to show some data on the card layout on the home page.
+✅The home page will have these sections — Slider, Upcoming Events, & 2 extra sections ⏯️
+✅Slider: Add a slider (Daisy UI slider or Swiper slider) with a minimum of 3 slides. ⏯️
+✅Upcoming Events Section: In the upcoming events section you need to create a JSON minimum of 6 data. You need to show some data on the card layout on the home page. ⏯️
 
 ✅Each event card will contain - JSON Data:
 thumbnail,
@@ -51,11 +73,11 @@ Category (e.g., Tech, Art)
 date
 location
 Entry fee
-and a “View More” button.
+and a “View More” button. ⏯️
 
 ( and other info what you want to show on the card is totally up to you)💥💥💥
 
-✅Event Details Page: (Protected)
+✅Event Details Page: (Protected) ⏯️
 ✅When the user clicks the “View More” button it takes the user to the Event Details page. This page will be a protected route and ensure that the private route moves to the login page if the user is not logged in. You need to show all the information about the selected event.
 
 ✅On this page, Include a form to reserve a seat, containing the following input fields: ⏯️
@@ -76,11 +98,11 @@ Password
 ✅A link that will redirect to the Register page ⏯️
 
 ✅Register Page: You have to use a password and email-based authentication to register. The Register page will have the following -
-Name
-Email
-photoURL
-password ✅
-✅A Link that will redirect to the login page
+Name ⏯️
+Email ⏯️
+photoURL ⏯️
+password ⏯️
+✅A Link that will redirect to the login page ⏯️
 ✅Google Login ⏯️
 For password verification you need to follow this - ⏯️
 ✅Must have an Uppercase letter in the password⏯️
@@ -94,7 +116,7 @@ For password verification you need to follow this - ⏯️
 Other Requirements
 
 ✅404 page: Create a 404 page/ not found page.⏯️
-✅Extra route: Add 1 more extra route to your website. This route should be private and protected, and its contents should be meaningful and relevant.
+✅Extra route: Add 1 more extra route to your website. This route should be private and protected, and its contents should be meaningful and relevant.⏯️
 
 ✅Dynamic Title: You need to implement a dynamic title for each page.
 
@@ -102,9 +124,9 @@ Other Requirements
 
 Challenges💥💥💥
 
-✅My Profile: Create a protected route where, after logging in, users can see their information like- name, email, and photoURL and there will be a form with 2 input fields for name and photoURL. Users can edit the name and photoURL and save the changes. This "saving" process uses Firebase's updateProfile() method to update the user's information stored securely in Firebase.
+✅My Profile: Create a protected route where, after logging in, users can see their information like- name, email, and photoURL and there will be a form with 2 input fields for name and photoURL. Users can edit the name and photoURL and save the changes. This "saving" process uses Firebase's updateProfile() method to update the user's information stored securely in Firebase. ⏯️
 ✅Implement show and hide passwords on the registration page. By default, it won’t show the password, but when you click on the “Eye” icon, it will. In this way, you need to toggle. ⏯️
-✅Implement any of 1 packages from the following list:
+✅Implement any of 1 packages from the following list: ⏯️
 
 ✅Swiper slider
 ✅Aos animation ⏯️

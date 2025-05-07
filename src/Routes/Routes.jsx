@@ -9,6 +9,7 @@ import EventDetails from "../Component/EventDetails";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../Component/Error";
 import Loading from "../Component/Loading";
+import About from "../Pages/About";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         Component: Register,
+      },
+      {
+        path: "about",
+        Component: About,
+
       },
       {
         path: "myprofile",

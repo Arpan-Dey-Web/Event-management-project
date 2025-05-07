@@ -5,10 +5,10 @@ import Footer from "../Component/Footer";
 
 const Root = () => {
   return (
-    <div className="">
+    <div className="bg-[#1E1E2F]">
       <div className="w-11/12 mx-auto py-3 md:py-5 lg:py-7 ">
         {/* navvar with header section */}
-        <header>
+        <header >
           <Navbar />
         </header>
         {/* main section with dynamically display */}

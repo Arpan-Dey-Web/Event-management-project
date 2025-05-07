@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router";
+import { Link, NavLink, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 import { FaRegEyeSlash, FaEye } from "react-icons/fa";
 import Swal from "sweetalert2";
@@ -45,15 +45,16 @@ const Login = () => {
 
   return (
     <div>
-      <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl mt-10 mb-10 ">
-        <h1 className="text-2xl font-bold text-center">Login</h1>
+      <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl mt-10 mb-10 card-bg ">
+        <h1 className="text-2xl font-bold text-center font">Login</h1>
         <form onSubmit={handleSignInUser} className="space-y-6">
           <div className="space-y-1 text-sm">
-            <label htmlFor="username" className="block dark:text-gray-600">
+            <label htmlFor="username" className="block paragraph">
               Email
             </label>
             <input
               type="email"
+              required
               name="email"
               id="email"
               placeholder="Your Email"
@@ -61,13 +62,14 @@ const Login = () => {
             />
           </div>
           <div className="space-y-1 text-sm relative">
-            <label htmlFor="password" className="block dark:text-gray-600">
+            <label htmlFor="password" className="block paragraph">
               Password
             </label>
             <input
               type={showPassword ? "text" : "password"}
               name="password"
               id="password"
+              required
               placeholder="Your Password"
               className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
             />
@@ -82,23 +84,21 @@ const Login = () => {
             </div>
 
             <div className="flex justify-end text-xs dark:text-gray-600">
-              <a rel="noopener noreferrer" href="#">
-                Forgot Password?
-              </a>
+              <Link to={"/forgotpassword"}>
+                <span className="font text-lg"> Forgot Password?</span>
+              </Link>
             </div>
           </div>
           <button
             type="submit"
-            className="block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600"
+            className="block w-full p-3 text-center rounded-sm main-btns font"
           >
             Log In
           </button>
         </form>
         <div className="flex items-center pt-4 space-x-1">
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
-          <p className="px-3 text-sm dark:text-gray-600">
-            Login with social accounts
-          </p>
+          <p className="px-3 text-sm paragraph">Login with social accounts</p>
           <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
         </div>
         <div className="flex justify-center space-x-4">
@@ -117,9 +117,9 @@ const Login = () => {
             <span>Log In With Google</span>
           </button>
         </div>
-        <p className="text-xs text-center sm:px-6 dark:text-gray-600">
+        <p className="text-lg text-center sm:px-6 font">
           Don't have an account?
-          <NavLink to={"/signup"} className="underline dark:text-gray-800">
+          <NavLink to={"/signup"} className="underline font">
             Sign up
           </NavLink>
         </p>
