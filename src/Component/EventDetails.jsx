@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, useLoaderData, useParams } from "react-router";
+import Swal from "sweetalert2";
 
 const EventDetails = () => {
   const allEvents = useLoaderData();
@@ -15,9 +16,11 @@ const EventDetails = () => {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
-    alert(
-      `Mr/Mrs ${name} succesfully reserbed a seat. Your email is ${email} `
-    );
+    Swal.fire({
+      title: `Mr/Mrs ${name} succesfully reserved a seat. Your email is ${email} `,
+      icon: "success",
+      draggable: true,
+    });
   };
 
   return (

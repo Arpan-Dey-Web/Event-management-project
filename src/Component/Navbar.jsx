@@ -67,7 +67,7 @@ const Navbar = () => {
                 src={`${
                   user
                     ? user.photoURL
-                    : "https://cdn-icons-png.flaticon.com/128/16998/16998906.png"
+                    : "https://i.ibb.co.com/sp32Nw6j/1144760.png"
                 }`}
               />
             </div>
@@ -79,7 +79,14 @@ const Navbar = () => {
             LogOut
           </button>
         ) : (
-          <NavLink to={"/login"}>LogIn</NavLink>
+          <div>
+            <button className="btn mr-2.5">
+              <NavLink to={"/login"}>LogIn</NavLink>
+            </button>
+            {/* <button className="btn">
+              <NavLink to={"/signup"}>Register</NavLink>
+            </button> */}
+          </div>
         )}
       </div>
     </div>

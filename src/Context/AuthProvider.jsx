@@ -10,36 +10,18 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 import { GoogleAuthProvider } from "firebase/auth";
-
+import Swal from "sweetalert2";
 
 const AuthProvider = ({ children }) => {
-  
-const googleProvider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
   // total user
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   // login with google
   const handleloginWithGoogle = () => {
-    
-    signInWithPopup(auth, googleProvider).then(result => {
-      console.log(result.user)
-    }).catch(error => {
-      console.log(error);
-})
-
-    
-    
-
-  }
-
-
-
-
-
-
-
-
+    return signInWithPopup(auth, googleProvider);
+  };
 
   // create user
 
@@ -49,11 +31,11 @@ const googleProvider = new GoogleAuthProvider();
 
   // sign in user
   const signInUser = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password).then((result) => {
-      setUser(result);
-      setLoading(true);
-    });
+    return signInWithEmailAndPassword(auth, email, password)
   };
+
+
+
 
   const updateUserProfile = (profile) => {
     return updateProfile(auth.currentUser, profile);
@@ -73,7 +55,11 @@ const googleProvider = new GoogleAuthProvider();
 
   const signOutUser = () => {
     signOut(auth).then(() => {
-      // alert("signout succesfully")
+      Swal.fire({
+        title: "Oops!!! Logged out!",
+        icon: "success",
+        draggable: true,
+      });
     });
   };
 

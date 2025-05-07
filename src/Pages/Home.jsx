@@ -2,11 +2,13 @@ import { useLoaderData } from "react-router";
 import Slider from "../Component/Slider";
 import Event from "../Component/Event";
 import JoinEvent from "../Component/JoinEvent";
+import Aos from "aos";
 
 const Home = () => {
+  Aos.init();
   const eventData = useLoaderData();
   return (
-    <div className="py-10">
+    <div className="py-10 ">
       <Slider />
       {/* all events */}
       <div className="py-10 ">
@@ -26,7 +28,6 @@ const Home = () => {
         </div>
       </div>
       {/* have to created 2 section  */}
-
       <JoinEvent></JoinEvent>
     </div>
   );
