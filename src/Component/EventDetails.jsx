@@ -26,33 +26,47 @@ const EventDetails = () => {
 
   return (
     <div className="py-10   ">
-        <Helmet>
-              <title>Eventure | Event Details</title>
-            </Helmet>
+      <Helmet>
+        <title>Eventure | Event Details</title>
+      </Helmet>
       <div className=" rounded-2xl  bg-base-300 ">
         <div className="text-center">
           <img
-            className="w-full rounded-2xl object-cover "
+            className="w-full rounded-t-2xl object-cover "
             src={thumbnail}
             alt=""
           />
         </div>
-        <div className="p-4 card-bg  rounded-2xl">
-          <h1 className="text-4xl font-bold font">{name}</h1>
-          <p className="font-semibold text-lg paragraph">Date: {date}</p>
-          <p className="text-lg  paragraph">{location}</p>
-          <p className="text-lg font-bold paragraph">{category}</p>
-          <p className="font-medium paragraph">
-            Entree Fee: {entry_fee} Doller
-          </p>
-          <p className="paragraph font-medium ">{description}</p>
-          <div className="mt-5">
-            <NavLink to={"/"}>
-              <button className="btn main-btns">Back to Home Page</button>
-            </NavLink>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 card-bg p-5 ">
+          {/* event details part */}
+          <div className="p-4   border-b-2 lg:border-r-2 lg:border-b-0  border-white space-y-2">
+            <h1 className="text-4xl font-bold font">{name}</h1>
+            <p className="font-semibold text-lg paragraph ">
+              <span className="text-blue-400">Date: </span>
+              {date}
+            </p>
+            <p className="text-2xl font-bold  font">{location}</p>
+            <p className="text-lg font-bold text-blue-400">{category}</p>
+            <p className="font-medium paragraph">
+              <span className="text-blue-400">Entree Fee: </span>
+              {entry_fee} Doller
+            </p>
+            <p className="paragraph font-medium ">
+              <span className="text-blue-400 font-bold ">Description:</span>{" "}
+              {description}
+            </p>
+            <div className="mt-5">
+              <NavLink to={"/"}>
+                <button className="btn main-btns font">
+                  Back to Home Page
+                </button>
+              </NavLink>
+            </div>
           </div>
 
-          <div className="p-5 shadow-sm bg-[#2F2F3B]  flex flex-col max-w-3xl mx-auto justify-center items-center mt-10 rounded-2xl">
+          {/* form  */}
+          <div className="p-3 shadow-sm bg-[#2F2F3B]  flex flex-col mx-auto  w-full rounded-2xl items-center my-auto">
             <div>
               <h1 className="font-extrabold mb-5 text-4xl font">
                 Reserve Your Seat
@@ -60,7 +74,7 @@ const EventDetails = () => {
             </div>
             <form
               onSubmit={handleReserveSeat}
-              className="bg-[#454154] p-6 rounded-xl  space-y-4 shadow-md"
+              className="bg-[#454154] p-6 rounded-xl  space-y-4 shadow-md  w-11/12 mx-auto"
             >
               <div className="flex flex-col">
                 <label
@@ -73,7 +87,7 @@ const EventDetails = () => {
                   type="text"
                   name="name"
                   placeholder="Enter Your Name"
-                  className="input input-lg bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0]"
+                  className="p-2 input-lg  rounded-2xl bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0]"
                   required
                 />
               </div>
@@ -89,15 +103,15 @@ const EventDetails = () => {
                   type="email"
                   name="email"
                   placeholder="Enter Your Email"
-                  className="input input-lg bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0]"
+                  className="p-2 input-lg bg-[#292933] text-[#F5F5F5] placeholder-[#B0B0B0] border border-[#292933] focus:border-[#9C27B0] rounded-2xl"
                   required
                 />
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex flex-col justify-center">
                 <button
                   type="submit"
-                  className="btn bg-[#3A324A] hover:bg-[#625170] text-white  transition-colors duration-200"
+                  className="btn bg-[#3A324A] hover:bg-[#625170] text-white  transition-colors duration-200 rounded-2xl w-5/12 mx-auto"
                 >
                   Reserve a Seat
                 </button>
