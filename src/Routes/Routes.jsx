@@ -1,5 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
-
+import { createBrowserRouter } from "react-router";
 import Login from "../Component/Login";
 import MyProfile from "../Component/MyProfile";
 import Home from "../Pages/Home";
@@ -11,10 +10,12 @@ import Error from "../Component/Error";
 import Loading from "../Component/Loading";
 import About from "../Pages/About";
 import ForgottPassword from "../Component/ForgottPassword";
+
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    
     hydrateFallbackElement: <Loading></Loading>,
     errorElement: <Error></Error>,
     children: [
@@ -34,7 +35,6 @@ export const router = createBrowserRouter([
       {
         path: "about",
         Component: About,
-
       },
       {
         path: "myprofile",
@@ -55,8 +55,8 @@ export const router = createBrowserRouter([
       },
       {
         path: "/fogottpassword",
-        Component:ForgottPassword
-      }
+        Component: ForgottPassword,
+      },
     ],
   },
 ]);

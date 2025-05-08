@@ -23,7 +23,9 @@ const Footer = () => {
             Copyright © {new Date().getFullYear()} - All right reserved
           </p>
           <p className="hover:underline paragraph ">Terms & Condition </p>
+          <p className="hover:underline paragraph "> Privacy Policy </p>
         </aside>
+
         <nav>
           <div className="grid grid-flow-col gap-4">
             {/* linkedin */}

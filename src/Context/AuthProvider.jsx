@@ -19,6 +19,9 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [loginEmail, setLoginEmail] = useState("");
 
+  
+  
+
   // login with google
   const handleloginWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);

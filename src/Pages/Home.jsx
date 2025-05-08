@@ -4,8 +4,17 @@ import Event from "../Component/Event";
 import JoinEvent from "../Component/JoinEvent";
 import Aos from "aos";
 import { Helmet } from "react-helmet-async";
+import Faq from "../Component/Faq";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [sliderData, setSliderData] = useState([]);
+  useEffect(() => {
+    fetch("/slider.json")
+      .then((res) => res.json())
+      .then((data) => setSliderData(data));
+  }, []);
+
   Aos.init();
   const eventData = useLoaderData();
   return (
@@ -13,7 +22,8 @@ const Home = () => {
       <Helmet>
         <title>Eventure | Home</title>
       </Helmet>
-      <Slider />
+
+      <Slider sliderData={sliderData} />
       {/* all events */}
       <div className="py-10 ">
         <div className="text-center">
@@ -33,6 +43,10 @@ const Home = () => {
       </div>
       {/* have to created 2 section  */}
       <JoinEvent></JoinEvent>
+
+      <div>
+        <Faq></Faq>
+      </div>
     </div>
   );
 };
