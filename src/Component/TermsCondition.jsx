@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 const TermsCondition = () => {
   return (
-    <div className="card-bg my-10 rounded-2xl max-w-5xl mx-auto">
+    <div className="card-bg my-10 rounded-2xl p-4 max-w-5xl mx-auto">
       <Helmet>
         <title>Eventure | TermsCondition</title>
       </Helmet>
