@@ -1,9 +1,13 @@
 import React from "react";
 import Contact from "../Component/Contact";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <div>
+        <Helmet>
+              <title>Eventure | About Us</title>
+            </Helmet>
       <h1 className="text-center text-5xl font-extrabold mt-10 mb-10 font ">
         About Us
       </h1>

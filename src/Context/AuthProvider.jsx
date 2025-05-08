@@ -17,6 +17,7 @@ const AuthProvider = ({ children }) => {
   // total user
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loginEmail, setLoginEmail] = useState("");
 
   // login with google
   const handleloginWithGoogle = () => {
@@ -31,11 +32,8 @@ const AuthProvider = ({ children }) => {
 
   // sign in user
   const signInUser = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password)
+    return signInWithEmailAndPassword(auth, email, password);
   };
-
-
-
 
   const updateUserProfile = (profile) => {
     setLoading(true);
@@ -75,6 +73,8 @@ const AuthProvider = ({ children }) => {
     setLoading,
     updateUserProfile,
     handleloginWithGoogle,
+    loginEmail,
+    setLoginEmail,
   };
 
   return (

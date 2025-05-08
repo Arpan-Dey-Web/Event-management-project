@@ -1,4 +1,4 @@
-Color Hex Code Where to Use
+<!-- Color Hex Code Where to Use
 🟦 Electric Blue #2979FF - Main buttons (Book Now, Register)
 
 - Links and hover effects
@@ -20,7 +20,7 @@ Color Hex Code Where to Use
 - Small animations or highlight outlines
   🟣 Violet Gradient (Optional) #7F00FF → #E100FF - Hero section background
 - Overlay gradients
-- Hover or transition effects
+- Hover or transition effects -->
 
 Assignment Category: Assignment-09_category_Jasmine
 
@@ -78,7 +78,7 @@ and a “View More” button. ⏯️
 ( and other info what you want to show on the card is totally up to you)💥💥💥
 
 ✅Event Details Page: (Protected) ⏯️
-✅When the user clicks the “View More” button it takes the user to the Event Details page. This page will be a protected route and ensure that the private route moves to the login page if the user is not logged in. You need to show all the information about the selected event.
+✅When the user clicks the “View More” button it takes the user to the Event Details page. This page will be a protected route and ensure that the private route moves to the login page if the user is not logged in. You need to show all the information about the selected event.⏯️
 
 ✅On this page, Include a form to reserve a seat, containing the following input fields: ⏯️
 Name
@@ -91,9 +91,7 @@ Email
 Authentication
 
 ✅Login Page: When you click the login button on the navbar /protected routes it redirects to the login page.⏯️
-✅You have to use a password and email-based authentication to log in. The login page will have-  
-Email
-Password
+✅You have to use a password and email-based authentication to log in. The login page will have-  Email Password ⏯️
 ✅Google login,⏯️
 ✅A link that will redirect to the Register page ⏯️
 
@@ -118,7 +116,7 @@ Other Requirements
 ✅404 page: Create a 404 page/ not found page.⏯️
 ✅Extra route: Add 1 more extra route to your website. This route should be private and protected, and its contents should be meaningful and relevant.⏯️
 
-✅Dynamic Title: You need to implement a dynamic title for each page.
+✅Dynamic Title: You need to implement a dynamic title for each page.⏯️
 
 ✅Once a user is logged in, user information will show on the navbar even if he/she reloads the website, this info will not disappear. You can show a loader when the logged-in user info is in a loading state. You can implement this using Firebase's onAuthStateChange method.⏯️
 

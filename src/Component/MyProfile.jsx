@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const MyProfile = () => {
   const { user, updateUserProfile, setUser } = use(AuthContext);
@@ -10,8 +11,6 @@ const MyProfile = () => {
     e.preventDefault();
     const name = e.target.name.value;
     const newPhoto = e.target.photo.value;
-
-
 
     updateUserProfile({ displayName: name, photoURL: newPhoto }).then(
       (result) => {
@@ -30,10 +29,12 @@ const MyProfile = () => {
         });
       }
     );
-    
   };
   return (
     <div>
+      <Helmet>
+        <title>Eventure | MyProfile</title>
+      </Helmet>
       <div className="flex flex-col mt-10 mb-10 mx-auto justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 card-bg">
         <img
           src={user.photoURL}

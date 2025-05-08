@@ -4,6 +4,7 @@ import { AuthContext } from "../Context/AuthContext";
 import { FaRegEyeSlash, FaEye } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 const Register = () => {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
@@ -51,6 +52,9 @@ const Register = () => {
 
   return (
     <div>
+        <Helmet>
+              <title>Eventure | Register</title>
+            </Helmet>
       <div className="w-full mx-auto max-w-md mt-10 mb-10 p-8 space-y-3 rounded-xl card-bg">
         <h1 className="text-2xl font-bold text-center font">Register Now</h1>
         <form onSubmit={handleSignUp} className="space-y-6">

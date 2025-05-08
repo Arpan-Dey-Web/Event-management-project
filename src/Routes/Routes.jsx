@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import Error from "../Component/Error";
 import Loading from "../Component/Loading";
 import About from "../Pages/About";
+import ForgottPassword from "../Component/ForgottPassword";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
         ),
         loader: () => fetch("/public/events.json"),
       },
+      {
+        path: "/fogottpassword",
+        Component:ForgottPassword
+      }
     ],
   },
 ]);

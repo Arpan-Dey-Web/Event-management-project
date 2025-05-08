@@ -3,17 +3,26 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 import { FaRegEyeSlash, FaEye } from "react-icons/fa";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const {setUser,setLoading, signInUser, handleloginWithGoogle } = use(AuthContext);
+
+  const {
+    setUser,
+    setLoading,
+    signInUser,
+    handleloginWithGoogle,
+    setLoginEmail,
+  } = use(AuthContext);
+
   const location = useLocation();
   const navigate = useNavigate();
   const handleSignInUser = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-
+   
     signInUser(email, password)
       .then((result) => {
         setUser(result);
@@ -36,7 +45,6 @@ const Login = () => {
       });
   };
 
-
   const googleLogIn = () => {
     handleloginWithGoogle().then(() => {
       navigate(`${location.state ? location.state : "/"}`);
@@ -45,6 +53,9 @@ const Login = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Eventure | LogIn</title>
+      </Helmet>
       <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl mt-10 mb-10 card-bg ">
         <h1 className="text-2xl font-bold text-center font">Login</h1>
         <form onSubmit={handleSignInUser} className="space-y-6">
@@ -52,7 +63,7 @@ const Login = () => {
             <label htmlFor="username" className="block paragraph">
               Email
             </label>
-            <input
+            <input onChange={(e)=>{setLoginEmail(e.target.value)}}
               type="email"
               required
               name="email"
@@ -84,8 +95,11 @@ const Login = () => {
             </div>
 
             <div className="flex justify-end text-xs dark:text-gray-600">
-              <Link to={"/forgotpassword"}>
-                <span className="font text-lg"> Forgot Password?</span>
+              <Link to={"/fogottpassword"}>
+                <span className="font text-lg hover:underline">
+                  {" "}
+                  Forgot Password?
+                </span>
               </Link>
             </div>
           </div>

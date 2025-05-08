@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { NavLink, useLoaderData, useParams } from "react-router";
 import Swal from "sweetalert2";
 
@@ -25,6 +26,9 @@ const EventDetails = () => {
 
   return (
     <div className="py-10   ">
+        <Helmet>
+              <title>Eventure | Event Details</title>
+            </Helmet>
       <div className=" rounded-2xl  bg-base-300 ">
         <div className="text-center">
           <img

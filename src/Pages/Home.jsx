@@ -3,12 +3,16 @@ import Slider from "../Component/Slider";
 import Event from "../Component/Event";
 import JoinEvent from "../Component/JoinEvent";
 import Aos from "aos";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   Aos.init();
   const eventData = useLoaderData();
   return (
     <div className="py-10 ">
+      <Helmet>
+        <title>Eventure | Home</title>
+      </Helmet>
       <Slider />
       {/* all events */}
       <div className="py-10 ">
