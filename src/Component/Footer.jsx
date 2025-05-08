@@ -22,12 +22,12 @@ const Footer = () => {
           <p className="paragraph">
             Copyright © {new Date().getFullYear()} - All right reserved
           </p>
-          <Link to={"/termscondition"}>
-            <p className="hover:underline paragraph ">Terms & Condition </p>
-          </Link>
-          <Link to={"/privacypolicy"}>
-            <p className="hover:underline paragraph ">Privacy Policy </p>
-          </Link>
+          <p className="hover:underline paragraph ">
+            <Link to={"/termscondition"}>Terms & Condition</Link>
+          </p>
+          <p className="hover:underline paragraph ">
+            <Link to={"/privacypolicy"}>Privacy Policy</Link>
+          </p>
         </aside>
 
         <nav>

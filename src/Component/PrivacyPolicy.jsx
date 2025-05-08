@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="card-bg p-4 mt-10 mb-10 max-w-5xl mx-auto">
+    <div className="card-bg p-4 mt-10 mb-10 max-w-5xl mx-auto rounded-2xl">
       <Helmet>
         <title>Eventure | PrivacyPolicy</title>
       </Helmet>
