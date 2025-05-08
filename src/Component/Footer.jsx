@@ -9,8 +9,8 @@ const Footer = () => {
         <aside>
           <div className="flex flex-col gap-2 items-center">
             <img
-              className="w-10"
-              src="/public/subscription_4172162.png"
+              className="w-[50px] rounded-2xl"
+              src="https://i.ibb.co.com/mPT7GnP/Brown-Gold-Elegant-and-Luxury-Wedding-Event-Planner-Organizer-Logo.png"
               alt=""
             />
             <span className="font font-bold text-4xl"> Eventure</span>

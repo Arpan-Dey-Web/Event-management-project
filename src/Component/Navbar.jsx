@@ -56,7 +56,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-2 items-center">
-          <img className="w-8" src="/public/subscription_4172162.png" alt="" />
+          <img
+            className="w-8 rounded-full"
+            src="https://i.ibb.co.com/mPT7GnP/Brown-Gold-Elegant-and-Luxury-Wedding-Event-Planner-Organizer-Logo.png"
+            alt=""
+          />
           <Link to={"/"} className="text-2xl font-bold">
             Eventure
           </Link>

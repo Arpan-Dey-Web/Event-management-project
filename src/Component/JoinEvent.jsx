@@ -5,7 +5,7 @@ const JoinEvent = () => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
-        <div className="grid  grid-cols-2 gap-5 p-10 border-b-2 border-b-white lg:border-b-0 lg:border-r-2">
+        <div className="grid  grid-cols-2 gap-5 p-10 border-b-2 border-b-white lg:border-b-0 lg:border-r-2 border-r-white">
           <div>
             <button className="border hover:border-amber-50 hover:border-2 rounded-full  p-8 bg-[#3A324A] hover:bg-[#625170]">
               <img

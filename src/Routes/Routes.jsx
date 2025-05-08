@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: () => fetch("/public/events.json"),
+        loader: () => fetch("/events.json"),
       },
       {
         path: "login",
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
             <EventDetails></EventDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch("/public/events.json"),
+        loader: () => fetch("/events.json"),
       },
       {
         path: "/fogottpassword",

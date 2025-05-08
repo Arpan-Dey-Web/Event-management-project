@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 
 const ForgottPassword = () => {
   const { loginEmail } = use(AuthContext);
+
   const handleforgottPassword = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -13,7 +14,6 @@ const ForgottPassword = () => {
       icon: "success",
       draggable: true,
     });
-
     window.location.href = "https://mail.google.com";
   };
   return (
@@ -33,9 +33,8 @@ const ForgottPassword = () => {
               id="email"
               type="email"
               name="email"
-              value={loginEmail}
+              defaultValue={loginEmail}
               required
-              readOnly
               placeholder="Email address"
               className=" rounded-2xl dark:border-gray-400 dark:bg-gray-50 dark:text-gray-800 focus:dark:ring-violet-600 focus:dark:border-violet-600 focus:ring-2 p-4"
             />

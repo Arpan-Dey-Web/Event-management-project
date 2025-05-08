@@ -130,8 +130,8 @@ Challenges💥💥💥
 ✅Aos animation ⏯️
 
 ✅Forget Password
-Make your forgot password feature functional. Clicking "forget password" redirects the user to the forget password page, containing a form with an email field and a reset password button.
-Suppose a user enters an email address on the login page. Show the email also in the forget password form.
+Make your forgot password feature functional. Clicking "forget password" redirects the user to the forget password page, containing a form with an email field and a reset password button.⏯️
+Suppose a user enters an email address on the login page. Show the email also in the forget password form. ⏯️
 On clicking the reset button. Redirect the user to Gmail.
 
 <!--
