@@ -1,4 +1,3 @@
-
 # 🎉 Event Explorer – A Local Event Discovery Platform
 
 **Event Explorer** is a vibrant, urban-themed Single Page Application (SPA) that empowers users to **discover**, **explore**, and **reserve seats** for thrilling local events — from tech summits and art exhibits to sports tournaments and creative workshops. ✨
@@ -60,16 +59,15 @@
 
 ## 📦 Packages Used
 
-| Package            | Purpose                          |
-|--------------------|----------------------------------|
-| `firebase`         | Auth & configuration             |
-| `react-router`     | Routing                          |
-| `sweetalert2`      | Alerts                           |
-| `swiper`           | Slider for home                  |
-| `aos`              | Animate On Scroll                |
-| `tailwindcss`      | Utility-first responsive styling |
-| `daisyui`          | Component library for Tailwind   |
-
+| Package        | Purpose                          |
+| -------------- | -------------------------------- |
+| `firebase`     | Auth & configuration             |
+| `react-router` | Routing                          |
+| `sweetalert2`  | Alerts                           |
+| `swiper`       | Slider for home                  |
+| `aos`          | Animate On Scroll                |
+| `tailwindcss`  | Utility-first responsive styling |
+| `daisyui`      | Component library for Tailwind   |
 
 ---
 

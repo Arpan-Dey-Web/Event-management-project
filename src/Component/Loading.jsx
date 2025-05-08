@@ -1,9 +1,18 @@
 import React from "react";
+import { Vortex } from "react-loader-spinner";
 
 const Loading = () => {
   return (
-    <div className="min-h-screen w-11/12 mx-auto flex justify-center items-center bg-indigo-200 mt-10">
-      <span className="loader"></span>;
+    <div className="min-h-screen w-11/12 mx-auto flex justify-center items-center card-bg mt-10">
+      <Vortex
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="vortex-loading"
+        wrapperStyle={{}}
+        wrapperClass="vortex-wrapper"
+        colors={["red", "green", "blue", "yellow", "orange", "purple"]}
+      />
     </div>
   );
 };
