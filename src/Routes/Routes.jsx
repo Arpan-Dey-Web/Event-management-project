@@ -10,12 +10,14 @@ import Error from "../Component/Error";
 import Loading from "../Component/Loading";
 import About from "../Pages/About";
 import ForgottPassword from "../Component/ForgottPassword";
+import PrivacyPolicy from "../Component/PrivacyPolicy";
+import TermsCondition from "../Component/TermsCondition";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    
+
     hydrateFallbackElement: <Loading></Loading>,
     errorElement: <Error></Error>,
     children: [
@@ -56,6 +58,14 @@ export const router = createBrowserRouter([
       {
         path: "/fogottpassword",
         Component: ForgottPassword,
+      },
+      {
+        path: "/privacypolicy",
+        Component: PrivacyPolicy,
+      },
+      {
+        path: "/termscondition",
+        Component: TermsCondition,
       },
     ],
   },

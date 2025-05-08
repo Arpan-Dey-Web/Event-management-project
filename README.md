@@ -4,7 +4,7 @@
 
 🚀 Built with **React** and **Firebase**, this platform invites the community to engage with local culture, learning, and celebration.
 
-🌐 **Live URL**: [👉 Visit Event Explorer](https://your-deployed-site.netlify.app)
+🌐 **Live URL**: [👉 Visit Event Explorer](https://b11-assaignment-9.netlify.app/)
 
 ---
 

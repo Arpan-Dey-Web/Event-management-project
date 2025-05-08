@@ -5,7 +5,6 @@ import JoinEvent from "../Component/JoinEvent";
 import Aos from "aos";
 import { Helmet } from "react-helmet-async";
 import Faq from "../Component/Faq";
-import { useEffect, useState } from "react";
 
 const Home = () => {
   Aos.init();
@@ -37,11 +36,7 @@ const Home = () => {
       {/* have to created 2 section  */}
       <JoinEvent></JoinEvent>
 
-      <div>
-        <Faq></Faq>
-      </div>
-
-    
+      <Faq></Faq>
     </div>
   );
 };

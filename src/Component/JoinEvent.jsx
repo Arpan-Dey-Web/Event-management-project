@@ -173,7 +173,7 @@ const JoinEvent = () => {
               <div className="flex space-x-4">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/3Y0V54g8/download-4.jpg"
+                    src="https://i.ibb.co.com/jP4qSw3g/download-3.jpg"
                     alt=""
                     className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                   />
@@ -208,7 +208,7 @@ const JoinEvent = () => {
               <div className="flex space-x-4">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/3Y0V54g8/download-4.jpg"
+                    src="https://i.ibb.co.com/pvVmgdHK/images.jpg"
                     alt=""
                     className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                   />

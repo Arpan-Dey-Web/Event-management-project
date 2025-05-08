@@ -58,11 +58,11 @@ const SwiperSlider = () => {
             <div className=" h-64 md:h-96   ">
               <div className="relative inset-0  bg-opacity-40 flex flex-col items-center justify-center rounded-2xl object-cover">
                 <img src={slide.image} alt={slide.title} className="w-full " />
-                <div className="absolute top-36">
-                  <h2 className="font text-2xl md:text-4xl font-bold drop-shadow-lg">
+                <div className="absolute top-24 lg:top-36">
+                  <h2 className="font text-2xl md:text-4xl font-bold drop-shadow-lg w-11/12 mx-auto lg:w-full">
                     {slide.title}
                   </h2>
-                  <p className="font text-lg  font-mono mt-2">
+                  <p className="font text-lg  font-mono mt-2 w-11/12 mx-auto text-center">
                     {slide.description}
                   </p>
                 </div>
