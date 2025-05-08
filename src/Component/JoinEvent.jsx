@@ -96,6 +96,7 @@ const JoinEvent = () => {
           Our Client Review
         </h1>
         <Marquee pauseOnHover={true}>
+          {/* Testimonial 1 */}
           <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
@@ -107,8 +108,8 @@ const JoinEvent = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
+                  <h4 className="font-bold">James Holloway</h4>
+                  <span className="text-xs dark:text-gray-600">6 days ago</span>
                 </div>
               </div>
               <div className="flex items-center space-x-2 dark:text-yellow-700">
@@ -117,7 +118,7 @@ const JoinEvent = () => {
                   viewBox="0 0 512 512"
                   className="w-5 h-5 fill-current"
                 >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
+                  <path d="M463.1 187.6c-5.3-16.4-20.1-28.4-37.4-30l-104.3-9-41.5-95.3c-6.5-15.1-21.2-24.7-37.3-24.7s-30.8 9.6-37.3 24.7l-41.5 95.3-104.3 9c-17.3 1.5-32.1 13.5-37.4 30-5.3 16.4.3 34.2 14.2 45.3l80 66.7-23.8 102.4c-4 17.2 3.1 35.2 17.7 45.4 14.6 10.2 33.7 11.3 49 2.9L256 403.5l91.8 48.2c6.9 3.6 14.3 5.3 21.6 5.3 9.4 0 18.8-2.9 26.9-8.5 14.6-10.2 21.7-28.2 17.7-45.4l-23.8-102.4 80-66.7c13.8-11.1 19.5-28.9 14.1-45.4z" />
                 </svg>
                 <span className="text-xl font-bold">4.5</span>
               </div>
@@ -130,6 +131,8 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
+
+          {/* Testimonial 2 */}
           <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
@@ -141,8 +144,8 @@ const JoinEvent = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
+                  <h4 className="font-bold">Olivia Chen</h4>
+                  <span className="text-xs dark:text-gray-600">3 days ago</span>
                 </div>
               </div>
               <div className="flex items-center space-x-2 dark:text-yellow-700">
@@ -151,7 +154,7 @@ const JoinEvent = () => {
                   viewBox="0 0 512 512"
                   className="w-5 h-5 fill-current"
                 >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
+                  <path d="M463.1 187.6c-5.3-16.4-20.1-28.4-37.4-30l-104.3-9-41.5-95.3c-6.5-15.1-21.2-24.7-37.3-24.7s-30.8 9.6-37.3 24.7l-41.5 95.3-104.3 9c-17.3 1.5-32.1 13.5-37.4 30-5.3 16.4.3 34.2 14.2 45.3l80 66.7-23.8 102.4c-4 17.2 3.1 35.2 17.7 45.4 14.6 10.2 33.7 11.3 49 2.9L256 403.5l91.8 48.2c6.9 3.6 14.3 5.3 21.6 5.3 9.4 0 18.8-2.9 26.9-8.5 14.6-10.2 21.7-28.2 17.7-45.4l-23.8-102.4 80-66.7c13.8-11.1 19.5-28.9 14.1-45.4z" />
                 </svg>
                 <span className="text-xl font-bold">4.5</span>
               </div>
@@ -163,19 +166,21 @@ const JoinEvent = () => {
               </p>
             </div>
           </div>
+
+          {/* Testimonial 3 */}
           <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/jP4qSw3g/download-3.jpg"
+                    src="https://i.ibb.co.com/3Y0V54g8/download-4.jpg"
                     alt=""
                     className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
+                  <h4 className="font-bold">Sofia Reyes</h4>
+                  <span className="text-xs dark:text-gray-600">8 days ago</span>
                 </div>
               </div>
               <div className="flex items-center space-x-2 dark:text-yellow-700">
@@ -184,31 +189,32 @@ const JoinEvent = () => {
                   viewBox="0 0 512 512"
                   className="w-5 h-5 fill-current"
                 >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
+                  <path d="M463.1 187.6c-5.3-16.4-20.1-28.4-37.4-30l-104.3-9-41.5-95.3c-6.5-15.1-21.2-24.7-37.3-24.7s-30.8 9.6-37.3 24.7l-41.5 95.3-104.3 9c-17.3 1.5-32.1 13.5-37.4 30-5.3 16.4.3 34.2 14.2 45.3l80 66.7-23.8 102.4c-4 17.2 3.1 35.2 17.7 45.4 14.6 10.2 33.7 11.3 49 2.9L256 403.5l91.8 48.2c6.9 3.6 14.3 5.3 21.6 5.3 9.4 0 18.8-2.9 26.9-8.5 14.6-10.2 21.7-28.2 17.7-45.4l-23.8-102.4 80-66.7c13.8-11.1 19.5-28.9 14.1-45.4z" />
                 </svg>
                 <span className="text-xl font-bold">4.5</span>
               </div>
             </div>
             <div className="p-4 space-y-2 text-sm dark:text-gray-600">
               <p>
-                "Their team transformed a simple gathering into an unforgettable
-                experience. Punctual, proactive, and professional from start to
-                finish."
+                "We had high expectations, and they were exceeded in every way.
+                The decor, the schedule, the energy—it was all perfect!"
               </p>
             </div>
           </div>
+
+          {/* Testimonial 4 */}
           <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
                   <img
-                    src="https://i.ibb.co.com/pvVmgdHK/images.jpg"
+                    src="https://i.ibb.co.com/3Y0V54g8/download-4.jpg"
                     alt=""
                     className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
+                  <h4 className="font-bold">Ibrahim Saeed</h4>
                   <span className="text-xs dark:text-gray-600">2 days ago</span>
                 </div>
               </div>
@@ -218,49 +224,15 @@ const JoinEvent = () => {
                   viewBox="0 0 512 512"
                   className="w-5 h-5 fill-current"
                 >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
+                  <path d="M463.1 187.6c-5.3-16.4-20.1-28.4-37.4-30l-104.3-9-41.5-95.3c-6.5-15.1-21.2-24.7-37.3-24.7s-30.8 9.6-37.3 24.7l-41.5 95.3-104.3 9c-17.3 1.5-32.1 13.5-37.4 30-5.3 16.4.3 34.2 14.2 45.3l80 66.7-23.8 102.4c-4 17.2 3.1 35.2 17.7 45.4 14.6 10.2 33.7 11.3 49 2.9L256 403.5l91.8 48.2c6.9 3.6 14.3 5.3 21.6 5.3 9.4 0 18.8-2.9 26.9-8.5 14.6-10.2 21.7-28.2 17.7-45.4l-23.8-102.4 80-66.7c13.8-11.1 19.5-28.9 14.1-45.4z" />
                 </svg>
                 <span className="text-xl font-bold">4.5</span>
               </div>
             </div>
             <div className="p-4 space-y-2 text-sm dark:text-gray-600">
               <p>
-                "Every aspect—lighting, sound, seating, catering—was handled
-                perfectly. Their attention to detail is unmatched!"
-              </p>
-            </div>
-          </div>
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 mr-5">
-            <div className="flex justify-between p-4">
-              <div className="flex space-x-4">
-                <div>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoz8bouTwtCz0RpCEz8wh0xYp648QHG9WfUg&s"
-                    alt=""
-                    className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold">Leroy Jenkins</h4>
-                  <span className="text-xs dark:text-gray-600">2 days ago</span>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2 dark:text-yellow-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current"
-                >
-                  <path d="M494,198.671a40.536,40.536,0,0,0-32.174-27.592L345.917,152.242,292.185,47.828a40.7,40.7,0,0,0-72.37,0L166.083,152.242,50.176,171.079a40.7,40.7,0,0,0-22.364,68.827l82.7,83.368-17.9,116.055a40.672,40.672,0,0,0,58.548,42.538L256,428.977l104.843,52.89a40.69,40.69,0,0,0,58.548-42.538l-17.9-116.055,82.7-83.368A40.538,40.538,0,0,0,494,198.671Zm-32.53,18.7L367.4,312.2l20.364,132.01a8.671,8.671,0,0,1-12.509,9.088L256,393.136,136.744,453.3a8.671,8.671,0,0,1-12.509-9.088L144.6,312.2,50.531,217.37a8.7,8.7,0,0,1,4.778-14.706L187.15,181.238,248.269,62.471a8.694,8.694,0,0,1,15.462,0L324.85,181.238l131.841,21.426A8.7,8.7,0,0,1,461.469,217.37Z"></path>
-                </svg>
-                <span className="text-xl font-bold">4.5</span>
-              </div>
-            </div>
-            <div className="p-4 space-y-2 text-sm dark:text-gray-600">
-              <p>
-                "Our conference was a massive success, all thanks to this event
-                team. Seamless coordination, elegant decor, and excellent
-                communication throughout."
+                "We felt like guests at our own event—the team took care of
+                everything with grace. Best experience ever!"
               </p>
             </div>
           </div>

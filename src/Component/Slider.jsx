@@ -6,12 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const SwiperSlider = ({ sliderData }) => {
-  const data = sliderData;
-
-
-
-
+const SwiperSlider = () => {
   const slides = [
     {
       id: 1,
@@ -60,19 +55,17 @@ const SwiperSlider = ({ sliderData }) => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-64 md:h-96 ">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-full object-cover "
-              />
-              <div className="absolute inset-0 bg-amber-200 bg-opacity-40 flex flex-col items-center justify-center rounded-2xl">
-                <h2 className="font text-2xl md:text-4xl font-bold drop-shadow-lg">
-                  {slide.title}
-                </h2>
-                <p className="font text-lg  font-mono mt-2">
-                  {slide.description}
-                </p>
+            <div className=" h-64 md:h-96   ">
+              <div className="relative inset-0  bg-opacity-40 flex flex-col items-center justify-center rounded-2xl object-cover">
+                <img src={slide.image} alt={slide.title} className="w-full " />
+                <div className="absolute top-36">
+                  <h2 className="font text-2xl md:text-4xl font-bold drop-shadow-lg">
+                    {slide.title}
+                  </h2>
+                  <p className="font text-lg  font-mono mt-2">
+                    {slide.description}
+                  </p>
+                </div>
               </div>
             </div>
           </SwiperSlide>
