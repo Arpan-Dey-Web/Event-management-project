@@ -83,7 +83,7 @@
 ⚙️ Installation Steps
 
 # 1. Clone the project
-git clone https://github.com/your-username/event-explorer.git
+git clone my repo link
 
 # 2. Go into the project folder
 cd event-explorer
